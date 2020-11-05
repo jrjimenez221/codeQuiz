@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeQuiz-Work in Progress</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Code Quiz!</h1>
+    <p class="lead">This is a simple quiz themed around pokemon.</p>
+    <hr class="my-4">  
+    <a id="startButton" class="btn btn-primary btn-lg" href="#" role="button">Begin</a>
+  </div> <!--end of header-->
+  <div class="theField"> <!--beginning of main content-->
+
+    <div class="container">
+
+      <!--question1-->
+      <div hidden id="question-1" class="row justify-content-md-center sector">
+        <div class="col col-lg-2 leftBar">
+          left bar
+        </div>
+        <div class="col-md-8 questionBox">
+          <div class="theQuestion">
+            <h3>#1: What was Ash's first pokemon?<hr/></h3>
+          </div>
+          <!--the options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">Pikachu</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Onyx</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Taurus</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Charmander</label>
+          </div>
+          
+        </div>
+        <div class="col col-lg-2 rightBar">
+          right bar
+        </div>
+      </div>
+
+      <!--Question 2-->
+      <div hidden id="question-2" class="row justify-content-md-center sector">
+        <div class="col col-lg-2 leftBar">
+          left bar
+        </div>
+        <div class="col-md-8 questionBox">
+          <div class="theQuestion">
+            <h3>#2: What is squirtle's final evolution?<hr/></h3>
+          </div>
+          <!--the options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">Wartortle</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Torterra</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Blastoise</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Ditto</label>
+          </div>
+          
+        </div>
+        <div class="col col-lg-2 rightBar">
+          right bar
+        </div>
+      </div>
+
+      <!--Question 3-->
+      <div hidden id="question-3" class="row justify-content-md-center sector">
+        <div class="col col-lg-2 leftBar">
+          left bar
+        </div>
+        <div class="col-md-8 questionBox">
+          <div class="theQuestion">
+            <h3>#3: Which of the following types is weak to ice<hr/></h3>
+          </div>
+          <!--the options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">Dragon</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Fighting</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Normal</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Bug</label>
+          </div>
+          
+        </div>
+        <div class="col col-lg-2 rightBar">
+          right bar
+        </div>
+      </div>
+
+      <!--Question 4-->
+      <div hidden id="question-4" class="row justify-content-md-center sector">
+        <div class="col col-lg-2 leftBar">
+          left bar
+        </div>
+        <div class="col-md-8 questionBox">
+          <div class="theQuestion">
+            <h3>#4: Which of these is a starter pokemon for Sapphire, Ruby and Emerald?<hr/></h3>
+          </div>
+          <!--the options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">Mudkip</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Blaziken</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Shuckle</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Chikorita</label>
+          </div>
+          
+        </div>
+        <div class="col col-lg-2 rightBar">
+          right bar
+        </div>
+      </div>
+
+      <!--Question 5-->
+      <div hidden id="question-5" class="row justify-content-md-center sector">
+        <div class="col col-lg-2 leftBar">
+          left bar
+        </div>
+        <div class="col-md-8 questionBox">
+          <div class="theQuestion">
+            <h3>#5: Which of the following is the poster pokemon for the platinum version of the game?<hr/></h3>
+          </div>
+          <!--the options-->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5a1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">Palkia</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5a2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Venusaur</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5a3" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Shuckle</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="q5a4" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Giratina</label>
+          </div>
+          
+        </div>
+        <div class="col col-lg-2 rightBar">
+          right bar
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    </div> <!--end of container-->
+
+    
+    <p class="signature"><span style="font-size: 10px">by</span> REY </p>
+    
+  
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+    let score = 0
+    let quizActive = false
+    
+    function startQuiz() {
+
+      $("#start-button").on("click", function(){
+        
+      })
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+    
+</body>
+</html> 
+<!--
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Pikachu
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Onyx
+  </label>
+</div>
+-->

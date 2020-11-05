@@ -1,0 +1,46 @@
+body{
+    background-color: darkslategray;
+}
+.sector{
+    margin-top: 5vh;
+}
+.questionBox{
+    background-color: royalblue;
+    border-radius: 10px;
+    background-color: ivory;
+    
+}
+.theQuestion{
+    margin: 10px 0px 0px 0px;
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    border-top: 1px solid gold;
+    margin-top: 10vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    
+    
+}
+.leftBar{
+    border-radius: 10px;
+    background-color: rgb(0, 172, 0);
+}
+.rightBar{
+    border-radius: 10px;
+    background-color: crimson;
+}
+label{
+    font-size: 20px;
+}
+.signature{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: gold;
+    font-family: 'Press Start 2P', cursive;
+
+}
