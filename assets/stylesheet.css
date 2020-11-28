@@ -28,15 +28,6 @@ footer{
 label{
     font-size: 20px;
 }
-.signature{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    color: gold;
-    font-family: 'Press Start 2P', cursive;
-    padding-right: 1vh;
-
-}
 .question{
     visibility: hidden;
 }
