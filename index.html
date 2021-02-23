@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
-<body>
+<body style="min-height: 80vh;">
 
   <div id="jumbo" class="jumbotron">
     <h1 class="display-4">Code Quiz!</h1>
@@ -30,8 +30,10 @@
     <div class="container-fluid" style="padding: 0;">
   
       <header id="quizHeader" class="row busy disdiv justify-content-between"> 
-        <h2 id="timer" class="col-auto">Time</h2>
-        <h2 id="score" class="col-auto">Score: 0</h2>
+        <h2 id="timer" class="col-3">Time</h2>
+        <h2 id="score" class="col-3 text-center">Score: 0</h2>
+        <h2 class="col-3 text-right"> <span id="hiScoreName"></span>:...<span id="hiScore"></span></h2>
+
       </header>
     </div>
 
@@ -65,21 +67,22 @@
             <input class="form-check-input" value="3" type="radio" name="option" id="option3">
             <label id="fourthChoice" class="form-check-label" for="option3"></label>
           </div>
-          <a id="answerBtn" type="submit" class="btn btn-primary btn-lg" style="float: right;" href="#" role="button">Submit</a>
+          <a id="answerBtn" type="submit" class="btn btn-primary btn-lg mb-1" style="float: right;" href="#" role="button">Submit</a>
         </div>
       </form>
 
-      <div class="row disdiv justify-content-around">
-
+      <div class="row over disdiv justify-content-around">
         <div class="card " style="width: 25rem;">
-          <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-          <div class="card-body">
-            <h5 id="card-title">Card title</h5>
-            <p id="card-text">You're as knowledgeable as a Magikarp is useful. But maybe one day, you'll evolve into a Gyarados.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <img id="card-Img" class="card-img-top" src="" alt="rankImg">
+          <div class="card-body text-center">
+            <h4 id="finalscore">-40</h4>
+            <h3 id="card-Title">Card title</h5>
+            <p id="card-Desc">A pokemon trainer eh?</p>
+            <a id="again" href="#" class="btn btn-primary">Again!</a>
           </div>
         </div>
       </div>
+
 
     </div> <!--end of container-->
 

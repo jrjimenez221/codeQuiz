@@ -6,15 +6,15 @@ A simple quiz themed around pokemon.
 
 ### Features
 * 60 second timer
-* Wrong answers deduct 5 seconds
-* Correct answers add to score
+* Wrong answers deduct 5 seconds and points
+* Correct answers add 10 to score and 5 to time
+* Time left is added to score
+* Highscore is recorded in between attempts
 
-
-
-
-
-
-
+### future development
+* Needs more css
+* More questions and rankings preferred
+* More optimized timer
 
 
 workflow for development

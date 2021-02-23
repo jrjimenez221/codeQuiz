@@ -7,7 +7,8 @@ body{
 #quizHeader{
     margin: 0;
     background-color: royalblue;
-    height: 10vh;
+    height: 5vh;
+    min-height: 40px;
 }
 .questionBox{
     background-color: royalblue;
@@ -42,4 +43,7 @@ label{
 }
 .enadiv{
     pointer-events: all;
+}
+.over{
+    margin-top: 10vh;
 }

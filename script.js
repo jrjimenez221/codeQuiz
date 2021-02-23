@@ -1,5 +1,6 @@
-let score = 0
-
+let score = 0;
+let hiScoreName = "Blu";
+let hiScore = 25;
 let quizActive = false;
 let timeLeft = 60;
 let questions = [
@@ -34,6 +35,23 @@ let questions = [
     correctA: 1,
   },
 ];
+let ranks = [
+  {
+    ranking: "Magikarp",
+    desc: "You're as knowledgeable as a Magikarp is useful. But maybe one day, you'll evolve into a Gyarados.",
+    img: "./assets/magikarp.png"
+  },
+  {
+    ranking: "Ash",
+    desc: "All those hours catching caterpies is starting to pay off. You're a late bloomer, but you'll get there. Just hold out till season 20 ;) .",
+    img: "./assets/ashderp.png"
+  },
+  {
+    ranking: "Red",
+    desc: "Should come down from that mountain. Does your mom know what you've been up to?",
+    img: "./assets/red.png"
+  }
+];
 let currentQuestionIndex = 0
 $("#score").text("Score: " + score)
 
@@ -61,17 +79,18 @@ function timer() {
       console.log("15 secs left")
     }
     else if (timeLeft <= 0) {
-      $("#timer").text("Time's Up");
-      
+      $("#timer").text("No Bonus");
+      console.log("no bonus")
       clearInterval(timeInterval);
     }
   }, 1000);
 }
 
-
-//begin the quiz
 function quiz() {
-  $("#startButton").toggleClass("invisible");
+  currentQuestionIndex = 0
+  score = 0
+  $("#hiScore").text(hiScore)
+  $("#hiScoreName").text(hiScoreName)
   $("#jumbo").addClass("disdiv")
   $(".busy").removeClass("disdiv")
   console.log("fds");
@@ -81,7 +100,7 @@ function quiz() {
 
 function firstQuestion() {
   if (currentQuestionIndex === 6){
-    quizOver()
+    quizOver(score)
   }
   console.log(questions[currentQuestionIndex].question);
   console.log(questions[currentQuestionIndex].answers);
@@ -137,10 +156,51 @@ function answerCheck(x, s, t){
   }
 }
 
-function quizOver() {
-  score + timeLeft
+function quizOver(x) {
+  console.log("Time bonus: " + timeLeft + " points!")
+  score = x + timeLeft
   timeLeft = 0
   let initials = prompt("You scored:" + score + " points. Enter your initials");
   console.log(initials + ": " + score);
+
   $(".over").removeClass("disdiv")
+  $(".busy").addClass("disdiv")
+  $("#finalscore").text("You scored " + score)
+  if(score < 40){
+    $("#card-Img").attr("src", ranks[0].img)
+    $("#card-Title").text(ranks[0].ranking)
+    $("#card-Desc").text(ranks[0].desc)
+  }
+  else if(score >= 41 && score <= 100){
+    $("#card-Img").attr("src", ranks[1].img)
+    $("#card-Title").text( ranks[1].ranking)
+    $("#card-Desc").text( ranks[1].desc)
+  }
+  else if(score >= 101){
+    $("#card-Img").attr("src", ranks[2].img)
+    $("#card-Title").text( ranks[2].ranking)
+    $("#card-Desc").text(ranks[2].desc)
+  }
+  newHigh(initials, score, hiScore)
+}
+
+$("#again").click(function() {
+  currentQuestionIndex= 0
+  score = 0
+  timeLeft = 60
+
+  $("#score").text(score),
+  $(".over").addClass("disdiv"),
+  $(".busy").removeClass("disdiv"),
+  
+  quiz()
+  timer()
+})
+function newHigh(x, y, z){
+  if (y > z){
+    hiScore = y,
+    hiScoreName = x
+  }
+  
+
 }
