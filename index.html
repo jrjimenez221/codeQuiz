@@ -14,64 +14,72 @@
   </head>
 <body>
 
-  <div class="jumbotron">
+  <div id="jumbo" class="jumbotron">
     <h1 class="display-4">Code Quiz!</h1>
     <p class="lead">This is a simple quiz themed around pokemon.</p>
     <hr class="my-4">  
     <a id="startButton" class="btn btn-primary btn-lg" href="#" role="button">Begin</a>
-    <button id="reveal">show</button>
-    <button id="hide">hide</button>
+    
     
   </div> <!--end of header-->
   
-  <div class="container-fluid" style="padding: 0;">
-
-    <header id="quizHeader" class="row justify-content-between"> 
-      <h2 id="timer" class="col-auto">Time</h2>
-      <h2 id="score" class="col-auto">Score: 0</h2>
-    </header>
-  </div>
   
-
-
-  <div class="theField"> <!--beginning of main content-->
+  
+  
+  <div class="theField "> <!--beginning of main content-->
+    <div class="container-fluid" style="padding: 0;">
+  
+      <header id="quizHeader" class="row busy disdiv justify-content-between"> 
+        <h2 id="timer" class="col-auto">Time</h2>
+        <h2 id="score" class="col-auto">Score: 0</h2>
+      </header>
+    </div>
 
     <div class="container">
 
       
       
-      
+     
       
 
       <!--question1-->
-      <form id="question-box" class="row justify-content-md-center sector">
+      <form id="question-box" class="disdiv busy row justify-content-md-center sector">
         <div class="col-md-8 questionBox">
           <div class="theQuestion">
             <h3 id="question"><hr/></h3>
           </div>
           <!--the options-->
           <div class="form-check">
-            <input class="form-check-input correctBtn" type="radio" name="option" id="option0">
+            <input class="form-check-input" value="0" type="radio" name="option" id="option0">
             <label id="firstChoice" class="form-check-label" for="option0"></label>
           </div>
           <div class="form-check">
-            <input class="form-check-input correctBtn" type="radio" name="option" id="option1">
+            <input class="form-check-input" value="1" type="radio" name="option" id="option1">
             <label id="secondChoice" class="form-check-label" for="option1"></label>
           </div>
           <div class="form-check">
-            <input class="form-check-input correctBtn" type="radio" name="option" id="option2">
+            <input class="form-check-input" value="2" type="radio" name="option" id="option2">
             <label id="thirdChoice" class="form-check-label" for="option2"></label>
           </div>
           <div class="form-check">
-            <input class="form-check-input correctBtn" type="radio" name="option" id="option3">
+            <input class="form-check-input" value="3" type="radio" name="option" id="option3">
             <label id="fourthChoice" class="form-check-label" for="option3"></label>
           </div>
           <a id="answerBtn" type="submit" class="btn btn-primary btn-lg" style="float: right;" href="#" role="button">Submit</a>
         </div>
       </form>
 
-      
+      <div class="row disdiv justify-content-around">
 
+        <div class="card " style="width: 25rem;">
+          <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+          <div class="card-body">
+            <h5 id="card-title">Card title</h5>
+            <p id="card-text">You're as knowledgeable as a Magikarp is useful. But maybe one day, you'll evolve into a Gyarados.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
 
     </div> <!--end of container-->
 
