@@ -3,6 +3,7 @@
 
 ### Summary 
 A simple quiz themed around pokemon.
+https://jrjimenez221.github.io/codeQuiz/
 
 ### Features
 * 60 second timer
@@ -25,7 +26,7 @@ workflow for development
     *   [x] a question
     *   [x] 4 choices
     *   [x] a correct choice INT
-    *   [ ] actually 10 questions
+    *   [x] actually 10 questions
 *   For loop
     *   [x] button that proceeds to the next question to display
     *   [x] compares selected answer to the correct choice of each question
